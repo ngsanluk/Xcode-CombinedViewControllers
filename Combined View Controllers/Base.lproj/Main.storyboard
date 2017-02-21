@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FvP-s5-Lli">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Best Directors-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Combined_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Directors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhf-vd-TkD">
+                                <rect key="frame" x="16" y="317" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lhf-vd-TkD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C8J-Lb-YrJ"/>
+                            <constraint firstItem="Lhf-vd-TkD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aSD-sE-9nU"/>
+                            <constraint firstItem="Lhf-vd-TkD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vAh-AN-rCv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Best Directors" image="first" id="xcO-e5-cJJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.8" y="-287.40629685157421"/>
+        </scene>
+        <!--Best Actress-->
+        <scene sceneID="tfz-Sz-O4O">
+            <objects>
+                <viewController id="jbJ-t3-N8i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fHl-y9-hOr"/>
+                        <viewControllerLayoutGuide type="bottom" id="R8v-Hr-XbY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FyX-53-SsD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Actress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geE-li-tzi">
+                                <rect key="frame" x="16" y="317" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="geE-li-tzi" firstAttribute="leading" secondItem="FyX-53-SsD" secondAttribute="leadingMargin" id="5m5-ie-44X"/>
+                            <constraint firstItem="geE-li-tzi" firstAttribute="trailing" secondItem="FyX-53-SsD" secondAttribute="trailingMargin" id="Bti-7B-nUR"/>
+                            <constraint firstItem="geE-li-tzi" firstAttribute="centerY" secondItem="FyX-53-SsD" secondAttribute="centerY" id="ErM-ub-t1t"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Best Actress" image="first" id="Usy-gp-1vv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWT-jh-tmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="1195"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="Mec-18-Ba3">
+            <objects>
+                <tableViewController id="5Ou-5J-TmS" customClass="BestMoviesTableViewController" customModule="Combined_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sId-Yb-xN1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseCell" id="O9J-kR-oDr">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O9J-kR-oDr" id="W2i-B3-OqQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Q3n-sB-VZZ" kind="show" identifier="showDetail" id="yo1-oy-6b9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Ou-5J-TmS" id="7gF-sZ-67f"/>
+                            <outlet property="delegate" destination="5Ou-5J-TmS" id="7rP-4A-1pS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="lgr-s6-Rgf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKt-R1-31Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225" y="967"/>
+        </scene>
+        <!--Best Movies Details View Controller-->
+        <scene sceneID="xye-c0-FCN">
+            <objects>
+                <viewController id="Q3n-sB-VZZ" customClass="BestMoviesDetailsViewController" customModule="Combined_View_Controllers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vKJ-KD-Gym"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCf-hw-prG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hi5-6q-Tiw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uRB-Bx-dpo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uRB-Bx-dpo" firstAttribute="leading" secondItem="hi5-6q-Tiw" secondAttribute="leading" id="EG9-Yv-mty"/>
+                            <constraint firstItem="uRB-Bx-dpo" firstAttribute="top" secondItem="hi5-6q-Tiw" secondAttribute="top" id="Ga4-IN-Vhc"/>
+                            <constraint firstAttribute="bottom" secondItem="uRB-Bx-dpo" secondAttribute="bottom" id="TgE-jx-7qs"/>
+                            <constraint firstAttribute="trailing" secondItem="uRB-Bx-dpo" secondAttribute="trailing" id="vuf-qx-7Hf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="moviePosterImageView" destination="uRB-Bx-dpo" id="pVb-qx-npr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seo-Z6-VZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="966.56671664167925"/>
+        </scene>
+        <!--Best Movies-->
+        <scene sceneID="fqk-oF-yAN">
+            <objects>
+                <navigationController id="lcM-NX-c3D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Best Movies" image="first" id="n8l-aS-khq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zJ-LK-MAu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5Ou-5J-TmS" kind="relationship" relationship="rootViewController" id="IJ4-Vr-htO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMr-cF-CnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="967"/>
+        </scene>
+        <!--Best Actors-->
+        <scene sceneID="jfp-OE-RSn">
+            <objects>
+                <viewController id="T2T-OZ-q1Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xI8-bf-sTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="hV4-cB-M3L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MDz-Wd-O2U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Actors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-Mq-0uY">
+                                <rect key="frame" x="16" y="318" width="343" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HCS-Mq-0uY" firstAttribute="leading" secondItem="MDz-Wd-O2U" secondAttribute="leadingMargin" id="D75-8O-ngO"/>
+                            <constraint firstItem="HCS-Mq-0uY" firstAttribute="centerY" secondItem="MDz-Wd-O2U" secondAttribute="centerY" id="Iih-BU-SMT"/>
+                            <constraint firstItem="HCS-Mq-0uY" firstAttribute="trailing" secondItem="MDz-Wd-O2U" secondAttribute="trailingMargin" id="z1k-3c-E0w"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Best Actors" image="second" id="9k9-EE-jiA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NrC-gX-XkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.8" y="423.23838080959524"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5Uj-mM-diQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FvP-s5-Lli" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Y6h-MF-Ibq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lcM-NX-c3D" kind="relationship" relationship="viewControllers" id="hhn-I1-zxT"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="m7d-Gv-M1a"/>
+                        <segue destination="T2T-OZ-q1Z" kind="relationship" relationship="viewControllers" id="kKw-8H-glf"/>
+                        <segue destination="jbJ-t3-N8i" kind="relationship" relationship="viewControllers" id="q4T-ZR-UPk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajd-EO-aWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
